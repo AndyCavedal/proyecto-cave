@@ -2,6 +2,8 @@
     font-size: 62.5%;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Poppins:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -14,8 +16,56 @@ header {
     top: 0px;
     width: 100vw;
     height: 10vh;
-    background-color: #7D9D9C;
+    background-color: #d2b382;
 }
+
+.title {
+    display: flex;
+    justify-content: center;
+    top: 0;
+}
+
+#namastex {
+    font-size: 6rem;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-family: 'Archivo Narrow', sans-serif;
+    border-radius: 5rem;
+    width: 35rem;
+}
+
+#namastex:hover {
+    background-color: #d7bc90;
+    cursor:context-menu;
+}
+
+#sidebar-hamburguesa {
+    width: 5rem;
+    height: 6rem;
+    margin: 2rem;
+    margin-left: 3rem;    
+}
+
+#sidebar-hamburguesa:hover {
+    cursor: pointer;
+}
+
+#theme {
+    width: 4.8rem;
+    height: 5rem;
+    margin: 2.5rem;
+    position: absolute;
+    right: 0;
+}
+
+#theme:hover {
+    cursor: pointer;
+}
+
+/* De aca para arriba es mi trabajo */
 
 main {
     position: absolute;

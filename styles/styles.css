@@ -1,0 +1,52 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 10vh;
+    background-color: #7D9D9C;
+}
+
+main {
+    position: absolute;
+    top: 10vh;
+    width: 100vw;
+    height: 85vh;
+    background-color: #F0EBE3;
+}
+
+footer {
+    position: absolute;
+    top: 95vh;
+    width: 100vw;
+    height: 5vh;
+    background-color: #E4DCCF;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    font-size: 2.8rem;
+    width: 40rem;
+    height: 30rem;
+    background-color: #fbfeff;
+    margin: 7rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5rem;
+}

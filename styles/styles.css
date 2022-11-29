@@ -294,3 +294,28 @@ footer {
     justify-content: center;
     border-radius: 5rem;
 }
+
+.links {
+    font-size: 1.8rem;
+    list-style: none;
+    right: 0;
+    bottom: ;
+    position: absolute;
+    width: 16rem;
+    height: 4.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#link-github {
+    text-decoration: none;
+    color: rgb(23, 22, 22);
+}
+
+#gitlogo {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    right: 11rem;
+}

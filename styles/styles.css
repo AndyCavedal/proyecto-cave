@@ -9,6 +9,7 @@
     --naranjita-header-oscuro: #d79b39;
     --naranjita-header-claro: #ffc96d91; 
     --naranjita-header-intermedio: #f9b43db7;
+    --marroncito-footer: #E4DCCF;
     --sm: 1.4rem;
     --md: 1.6rem;
     --lg: 1.8rem;
@@ -33,7 +34,7 @@ header {
     top: 0px;
     width: 100vw;
     height: 10vh;
-    background-color: #d2b382;
+    background-color: var(--naranjita-header);
 }
 
 .title-principal {
@@ -54,10 +55,6 @@ header {
     width: 35rem;
 }
 
-#namastex:hover {
-    background-color: #d7bc90;
-    cursor:context-menu;
-}
 
 #sidebar-hamburguesa {
     width: 5rem;
@@ -274,7 +271,7 @@ footer {
     top: 95vh;
     width: 100vw;
     height: 5vh;
-    background-color: #E4DCCF;
+    background-color: var(--marroncito-footer);
 }
 
 .container {

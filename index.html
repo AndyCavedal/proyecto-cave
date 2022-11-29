@@ -9,17 +9,110 @@
 </head>
 <body>
     
-    <header></header>
-    <main>
-        <div class="container">
-            <div class="item">15 minutos</div>
-            <div class="item">10 miutos</div>
-            <div class="item">5 minutos</div>
-        </div>
-        <h1></h1>
-        <div class="informacion"><div>
-    </main>
-    <footer></footer>
+    <header>
 
+        <div class="logos">
+
+            <img src="/resources/sidebar2.png" alt="sidebar" id="sidebar-hamburguesa" onclick="toggleHamburguesaMenu()">
+
+            <img src="/resources/layers2.png" alt="theme" id="theme" onclick="toggleThemeMenu()" >
+        </div>
+
+        <div class="desktop-menu inactive">
+            <ul>
+      <li>
+        <a class="themes-title">Themes</a>
+      </li>
+
+      <li>
+        <a>Option 1</a>
+      </li>
+
+      <li>
+        <a>Option 2</a>
+      </li>
+
+      <li>
+        <a>Option 3</a>
+      </li>
+
+      <li>
+        <a id="themes-close-button">Close</a>
+      </li>
+    </ul>
+        </div>
+
+        <div class="title-principal">
+            <h1 id="namastex">Namastex</h1>
+        </div>
+
+         <aside class="product-detail">
+
+    <div class="sobre-title-container inactive">
+    <div class="title-container">
+      <img id="grey-arrow-right" src="/resources/left-arrow.png" alt="arrow">
+      <p class="title">Menu</p>
+    </div>
+    </div>
+
+    <div class="menu-hamburguesa inactive">
+      <div class="shopping-cart">
+        <label class="label-hamburguesa" id="label-namastex-seleccionado" for="namastex-label">
+            <figure>
+            <input type="radio" id="namastex-label" class="inputs-hamburguesa" name="input-hamburguesa">
+             <img id="namastex-label" src="/resources/meditation1.png" alt="bike">
+            </figure>
+            <p>Namastex</p>
+            <p>Meditacion</p>
+        </label>
+      </div>
+
+      <div class="shopping-cart">
+        <label class="label-hamburguesa" id="label-yono-seleccionado" for="yono-label">
+            <figure>
+            <input type="radio" id="yono-label" class="inputs-hamburguesa" name="input-hamburguesa">
+            <img src="/resources/tasklist2.png" alt="bike">
+            </figure>
+            <p>Yo No</p>
+            <p>Tareas</p>
+        </label>
+      </div>
+
+      <div class="shopping-cart">
+      <label class="label-hamburguesa" id="label-rolcult-seleccionado" for="rol-character-label">
+            <figure>
+            <input type="radio" id="rol-character-label"
+            class="inputs-hamburguesa" name="input-hamburguesa">
+            <img src="/resources/roldice2.png" alt="bike">
+            </figure>
+            <p>Rol Cult</p>
+            <p>Rol Characters</p>
+        </label>
+      </div>
+
+      <div class="order">
+        <p>
+          <span id="te-encuentras-en">Te encuentras en:</span>
+        </p>
+        <p id="aplicacion-actual">Namastex</p>
+      </div>
+
+      <button class="primary-button">
+        Seleccionar
+      </button>
+    </div>
+  </div>
+  </aside>
+
+    </header>
+   
+    <footer>
+      <li class="links">
+        <img src="/resources/gitlogo.png" alt="github logo" id="gitlogo">
+        <a href="https://github.com/AndyCavedal/proyecto-cave" id="link-github">Github</a>
+       </li>
+    </footer>
+
+    <script src="/javascript/main.js"></script>
 </body>
 </html>

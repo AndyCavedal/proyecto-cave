@@ -15,3 +15,4 @@ Foto del proyecto en estado actual (d11-m29-2022):
 ##### El proyecto esta en un estado muy joven aún, pero sigue progresando cada día con amor, cualquier aporte exterior sera bienvenido. Muchas gracias por leer la info y espreo tengas buen dia. (⌐■_■)
 #
  >Proyecto humildemente realizado por Javier Cavedal y Andy Cavedal.
+ HOLA

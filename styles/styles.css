@@ -1,5 +1,17 @@
 :root {
     font-size: 62.5%;
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --naranjita-header: #d2b382; 
+    --naranjita-header-oscuro: #d79b39;
+    --naranjita-header-claro: #ffc96d91; 
+    --naranjita-header-intermedio: #f9b43db7;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Poppins:wght@300&display=swap');
@@ -10,6 +22,11 @@
     box-sizing: border-box;
 }
 
+/* Propiedad que esconde los objetos no abiertos */
+.inactive {
+    display: none;
+}
+/* . */
 
 header {
     position: absolute;
@@ -19,7 +36,7 @@ header {
     background-color: #d2b382;
 }
 
-.title {
+.title-principal {
     display: flex;
     justify-content: center;
     top: 0;
@@ -53,6 +70,10 @@ header {
     cursor: pointer;
 }
 
+.boton-temas {
+    position: absolute;
+}
+
 #theme {
     width: 4.8rem;
     height: 5rem;
@@ -65,6 +86,179 @@ header {
     cursor: pointer;
 }
 
+/* Sidebar Temas */
+
+  body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .desktop-menu {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 10rem;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 0.6rem;
+    padding: 2rem 2rem 0 2rem;
+    font-size: 1.4rem;
+  }
+
+  .desktop-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .desktop-menu ul li {
+    text-align: end;
+  }
+  .desktop-menu ul li:nth-child(1),
+  .desktop-menu ul li:nth-child(1) {
+    font-weight: bold;
+  }
+  .desktop-menu ul li:last-child {
+    padding-top: 2rem;
+    border-top: 1px solid var(--very-light-pink);
+  }
+  .desktop-menu ul li:last-child a {
+    color: var(--naranjita-header-oscuro);
+    font-size: 1.6rem;
+  }
+
+  .desktop-menu ul li a {
+    cursor: pointer;
+    color: var(--back);
+    text-decoration: none;
+    margin-bottom: 2rem;
+    display: inline-block;
+  }
+
+  /* Sidebar temas .end */
+
+  /* Sidebar hamburguesa */
+
+  .product-detail {
+    width: 360px;
+    padding: 24px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 10vh;
+  }
+  .title-container {
+    display: flex;
+  }
+  .title-container img {
+    transform: rotate(180deg);
+    margin-right: 14px;
+  }
+  .title {
+    font-size: var(--lg);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  .order {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+    background-color: var(--text-input-field);
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 0 24px;
+  }
+  .order p:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+  }
+  .order p span:nth-child(1) {
+    font-size: var(--md);
+    font-weight: bold;
+  }
+  .order p:nth-child(2) {
+    text-align: end;
+    font-weight: bold;
+  }
+  .shopping-cart {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center;
+  }
+
+  .shopping-cart:hover {
+    background-color: rgb(249, 249, 249);
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+
+  .seleccionado {
+    background-color: rgb(249, 249, 249);
+    border-radius: 2rem;
+  }
+
+  .shopping-cart figure {
+    margin: 0;
+  }
+  .shopping-cart figure img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 2rem;
+    object-fit: cover;
+  }
+  .shopping-cart p:nth-child(2) {
+    color: var(--very-light-pink);
+  }
+  .shopping-cart p:nth-child(3) {
+    font-size: var(--md);
+    font-weight: bold;
+  }
+  .primary-button {
+    background-color: var(--naranjita-header-oscuro);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+  }
+
+  .primary-button:hover {
+    background-color: var(--naranjita-header-intermedio);
+    border: solid 0.15rem var(--naranjita-header-oscuro);
+    box-shadow: 0.2rem 0.2rem var(--naranjita-header-oscuro);
+    /* color: var(--naranjita-header-oscuro); */
+  }
+
+  .label-hamburguesa {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 1.6rem;
+    align-items: center;
+    width: 31.2rem;
+  }
+
+  #grey-arrow-right {
+    width: 1rem;
+    height: 1.6rem;
+    margin-top: 0.2rem;
+  }
+
+  #aplicacion-actual {
+    font-size: 1.6rem;
+    position: relative;
+  }
+
+  input {
+    display: none;
+  }
+
+  /* Sidebar Hamburguesa .end */
+
 /* De aca para arriba es mi trabajo */
 
 main {
@@ -72,7 +266,7 @@ main {
     top: 10vh;
     width: 100vw;
     height: 85vh;
-    background-color: #F0EBE3;
+    /* background-color: #F0EBE3; */
 }
 
 footer {

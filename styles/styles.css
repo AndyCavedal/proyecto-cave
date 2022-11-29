@@ -326,9 +326,14 @@ footer {
   color: rgb(23, 22, 22);
 }
 
-#gitlogo {
-  width: 3rem;
-  height: 3rem;
-  position: absolute;
-  right: 11rem;
+.item {
+    font-size: 2.8rem;
+    width: 40rem;
+    height: 30rem;
+    background-color: #fbfeff;
+    margin: 7rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5rem;
 }

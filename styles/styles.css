@@ -29,6 +29,11 @@
 }
 /* . */
 
+#cambiar-color {
+  position: absolute;
+  right: 50vw;
+}
+
 header {
     position: absolute;
     top: 0px;
@@ -118,7 +123,7 @@ header {
     padding-top: 2rem;
     border-top: 1px solid var(--very-light-pink);
   }
-  .desktop-menu ul li:last-child a {
+  #themes-close-button {
     color: var(--naranjita-header-oscuro);
     font-size: 1.6rem;
   }

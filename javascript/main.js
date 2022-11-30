@@ -18,6 +18,18 @@ var inputRolCharacter = document.querySelector('#rol-character-label');
 const botonSeleccionarAplicacion = document.querySelector('.primary-button');
 var aplicacionActualSpan = document.querySelector('#aplicacion-actual');
 var inputsDeHamburguesa = document.querySelector('.inputs-hamburguesa');
+var colorButton = document.getElementById('cambiar-color');
+
+
+colorButton.addEventListener('click', () => {
+    console.log('Boton funcionando!');
+    document.documentElement.style.setProperty('--naranjita-header' , '#FED049');
+    document.documentElement.style.setProperty('--naranjita-header-oscuro', '#3D5656')
+    document.documentElement.style.setProperty('--naranjita-header-claro', '#CFFDE1')
+    document.documentElement.style.setProperty('--naranjita-header-intermedio', '#68B984')
+    // document.documentElement.style.setProperty('--marroncito-footer', '')
+    
+});
 
 
 botonSeleccionarAplicacion.addEventListener('click', comprobarLabelAplicacion);

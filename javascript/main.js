@@ -5,7 +5,7 @@ const temasMenu = document.querySelector('.desktop-menu');
 const temasMenuCloseButton = document.querySelector('#themes-close-button');
 const menu = document.querySelector('#sidebar-hamburguesa');
 const hamburguesaMenu = document.querySelector('.menu-hamburguesa');
-const hamburguesaMenuFlecha = document.querySelector('.sobre-title-container');
+const hamburguesaMenuFlecha = document.querySelector('.product-detail');
 var labelTesteo = document.querySelector('.label-hamburguesa');
 
 var labelNamastexId = document.getElementById('label-namastex-seleccionado');
@@ -18,18 +18,40 @@ var inputRolCharacter = document.querySelector('#rol-character-label');
 const botonSeleccionarAplicacion = document.querySelector('.primary-button');
 var aplicacionActualSpan = document.querySelector('#aplicacion-actual');
 var inputsDeHamburguesa = document.querySelector('.inputs-hamburguesa');
-var colorButton = document.getElementById('cambiar-color');
+var springButton = document.getElementById('spring');
+var cieloButton = document.getElementById('cielo');
+var caracolButton = document.getElementById('caracol');
 
 
-colorButton.addEventListener('click', () => {
+springButton.addEventListener('click', () => {
     console.log('Boton funcionando!');
     document.documentElement.style.setProperty('--naranjita-header' , '#FED049');
     document.documentElement.style.setProperty('--naranjita-header-oscuro', '#3D5656')
     document.documentElement.style.setProperty('--naranjita-header-claro', '#CFFDE1')
     document.documentElement.style.setProperty('--naranjita-header-intermedio', '#68B984')
     // document.documentElement.style.setProperty('--marroncito-footer', '')
-    
 });
+
+cieloButton.addEventListener('click', () => {
+    console.log('Boton funcionando!');
+    document.documentElement.style.setProperty('--naranjita-header' , '#42C2FF');
+    document.documentElement.style.setProperty('--naranjita-header-oscuro', '#85F4FF')
+    document.documentElement.style.setProperty('--naranjita-header-claro', '#EFFFFD')
+    document.documentElement.style.setProperty('--naranjita-header-intermedio', '#B8FFF9')
+    // document.documentElement.style.setProperty('--marroncito-footer', '')
+});
+
+
+caracolButton.addEventListener('click', () => {
+    console.log('Boton funcionando!');
+    document.documentElement.style.setProperty('--naranjita-header' , '#594545');
+    document.documentElement.style.setProperty('--naranjita-header-oscuro', '#815B5B')
+    document.documentElement.style.setProperty('--naranjita-header-claro', '#FFF8EA')
+    document.documentElement.style.setProperty('--naranjita-header-intermedio', '#9E7676')
+    document.documentElement.style.setProperty('--background-clarito', '#FFF8EA')
+    // document.documentElement.style.setProperty('--marroncito-footer', '')
+});
+
 
 
 botonSeleccionarAplicacion.addEventListener('click', comprobarLabelAplicacion);
@@ -70,7 +92,7 @@ function comprobarLabelAplicacion () {
         labelYonoId.classList.remove('seleccionado')
         labelRolCultId.classList.remove('seleccionado')
         return;
-
+        
     }
     else if (inputYono.checked) {
         console.log('Escojiste Yono')
